@@ -6,4 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".ShareActivity">
 
+    <EditText
+        android:id="@+id/commentText"
+        android:layout_width="300dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="296dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Comment"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Share"
+        app:layout_constraintEnd_toEndOf="@+id/commentText"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/commentText"
+        app:layout_constraintTop_toBottomOf="@+id/commentText" />
+
+    <ImageView
+        android:id="@+id/profileView"
+        android:layout_width="128dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="172dp"
+        app:layout_constraintBottom_toTopOf="@+id/commentText"
+        app:layout_constraintStart_toStartOf="@+id/commentText"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/profileInfo"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="196dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/commentText"
+        app:layout_constraintEnd_toEndOf="@+id/commentText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/profileView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
